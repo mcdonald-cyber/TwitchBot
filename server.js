@@ -3,7 +3,7 @@ require(`dotenv`).config();
 const tmi = require('tmi.js');
 
 //^start of string with `!command my-arguement`
-const regexpCommand = new RegExp(/^![a-zA-Z0-9]+)(?:\W+)?(.*)?/);
+const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
 
 const commands = {
     website: {
